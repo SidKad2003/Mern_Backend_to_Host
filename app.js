@@ -13,7 +13,7 @@ const app = express()
 app.use(express.json())
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000', 'https://tubular-naiad-9c456a.netlify.app');
+    res.setHeader('Access-Control-Allow-Origin', 'https://tubular-naiad-9c456a.netlify.app');
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,DELETE');
     res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
     next();
